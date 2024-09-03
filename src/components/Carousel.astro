@@ -1,0 +1,18 @@
+---
+const { imageUrls } = Astro.props
+---
+
+<div class="carousel">
+    <div class="slides">
+        <!-- Images -->
+        {
+            imageUrls.map((url: string) => {
+                return (<div class="slide">
+                    <img src={url} alt="" />;
+                </div>)
+            })
+        }
+    </div>
+    <button class="prev">←</button>
+    <button class="next">→</button>
+</div>

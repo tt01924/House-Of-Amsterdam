@@ -1,0 +1,49 @@
+<!-- ---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import "../design.css"
+import "../header.css"
+import "../research.css"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/x-icon" href="/FAVICON_1.ico">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--main-font: "Neue Haas Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: 300;
+	}
+
+	@font-face {
+		font-family: "Neue Haas Display";
+		src: url("/fonts/NeueHaasDisplay-Light.ttf");
+		font-weight: 300;
+	}
+
+	@font-face {
+		font-family: "Neue Haas Display";
+		src: url("/fonts/NeueHaasDisplay-Roman.ttf");
+		font-weight: 500;
+	}
+
+	@font-face {
+		font-family: "Neue Haas Display";
+		src: url("/fonts/NeueHaasDisplay-Mediu.ttf");
+		font-weight: 700;
+	}
+</style> -->

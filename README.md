@@ -1,2 +1,2 @@
 # House-Of-Amsterdam
-Software Development for a Luxury Real Estate client.
+Software Development for a Dutch Luxury Real Estate client.

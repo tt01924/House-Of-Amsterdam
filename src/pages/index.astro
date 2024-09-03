@@ -1,0 +1,115 @@
+---
+// import Layout from '../layouts/Layout.astro';
+// import { sanityClient } from "sanity:client";
+// import Project from '../components/Project.astro';
+// import Research from '../components/Research.astro';
+// import Header from '../components/Header.astro';
+
+// const projects = await sanityClient.fetch('*[_type == "project"]')
+// const research = await sanityClient.fetch('*[_type == "research"]')
+// const settings = await sanityClient.fetch('*[_type == "siteSettings"][0]')
+// Object.keys(settings).forEach(key => {
+// 	console.log(key)
+// })
+// colour names in settings
+// mainBgCol
+// accentCol
+// researchTextCol
+// mainTextCol
+// researchBgCol
+---
+<!-- 
+<Layout title="Sara Biatchinyi">
+	<script src="../index.js"></script>
+	<Header />
+	<div class="container">
+		<div class="overlay-left"></div>
+		<div class="left-half active">
+			<h2>hello, my name is</h2>
+			<h1>sara biatchinyi.</h1>
+			<h3>I'm a graphic designer and a creative researcher.<br>
+				I'm all about observing, understanding, and applying - cultural studies and research are at the core of what I do.</h3>
+			<p class="arrow">&#8595;</p>
+
+			{projects.map(p => <Project project={p} /> )}
+		</div>
+
+		<div class="overlay-right"></div>
+		<div class="right-half">
+			<div class="front-page">
+				<h2>sara's research space*</h2>
+				<div class="buttons-container">
+					{research.map(r => <button class="research-button" data-id={r._id} >{r.title}</button>)}
+				</div>
+			</div>
+
+			{research.map(r => <Research research={r} />)}
+
+		</div>
+	</div>
+</Layout>
+
+<style>
+	
+</style> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House of Amsterdam</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class='buttonsDiv'>
+      <a class="nav-link" href="/index/index.html">House Of Amsterdam</a>
+      <a class="nav-link" href="/services/services.html">Services</a>
+      <a class="nav-link" href="/about/about.html">About</a>
+      <a class="nav-link" href="/contact/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p>The sky might be your limit,</p>
+    <p>but we can take you to <span id="mars">Mars.</span></p>
+  </section>
+
+  <main>
+    <section>
+      <main>
+      <h1 class="accent">Welcome to the House Of Amsterdam.</h1>
+      </main>
+    </section>
+
+    <section>
+      <h3>This is where we come in.</h3>
+      <p>Long gone are the days where you could simply pick up your edition of 'Hitchhiker's Guide to the Galaxy' and set
+        about on your merry way.
+      </p>
+      <p>
+        Oh no, the universe has changed since then; long gone are the days of typewriters, printers, IOS, and
+        Doo-Hickey450's - Welcome to the 32nd century grandpa.
+        If you wanna give this a shot and keep all your cyber-limbs in one piece, your going to want to speak to us.
+      </p>
+    </section>
+
+    <section>
+      <!-- Properties section -->
+    </section>
+
+  </main>
+
+  <footer>
+    <small>
+      Copyright - Please click <a href="https://www.boredpanda.com/angry-kittens/">here</a> to see the detailed and
+      important rights of the Intergalactic Travel Agencies intellectual property.
+    </small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

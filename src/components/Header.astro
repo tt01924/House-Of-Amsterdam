@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets"
+---
+
+<header>
+
+    <Image class="headerStar" src="/popupStar.png" alt='' width={35} height={35} />
+    <div>
+        <button class="design">design</button>
+    </div>
+    <Image class="headerStar" src="/popupStar.png" alt='' width={35} height={35} />
+    <div class="contact">
+        <button id="indexShowHelp" class="indexShowHelp">contact</button>
+    </div>
+    <Image class="headerStar" src="/popupStar.png" alt='' width={35} height={35} />
+    <div>
+        <button class="research">research</button>
+    </div>
+    <Image class="headerStar" src="/popupStar.png" alt='' width={35} height={35} />
+
+</header>
+<!-- Hidden header popups -->
+<div id="indexHelpPopup" class="contactPopup">
+    <div class="contactContent">
+        <span id="indexPopupClose"></span>
+        <h7>would you like to<br> work together?<br></h7>
+        <h8><a href="mailto:sarabiatchinyi@gmail.com">e-mail</a><br>
+        <a href="https://www.linkedin.com/in/sara-biatchinyi-20848513b/">linkedin</a><br>
+        <a href="https://www.instagram.com/sara.biatchinyi/">instagram</a><br>
+        </h8>
+        <Image class="popupStar" src="/popupStar.png" alt='' width={50} height={50} />
+        <h9>web development by <a href="https://www.linkedin.com/in/todd-taylor-a8bba2220/" >todd taylor</a> & <a href="https://www.linkedin.com/in/jfgerrard/">jana gerrard</a></h9>
+    </div>
+</div>
